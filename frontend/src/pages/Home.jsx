@@ -5,9 +5,9 @@ function Home() {
   const [searchQuery, setSearchQuery] = useState("");
 
   const movies = [
-    { id: 1, title: "Test 1", release_date: "2020" },
-    { id: 2, title: "Test 2", release_date: "2020" },
-    { id: 3, title: "Test 3", release_date: "2020" },
+    { id: 1, title: "Movie 1", release_date: "2020" },
+    { id: 2, title: "Three", release_date: "2020" },
+    { id: 3, title: "Two", release_date: "2020" },
   ];
 
   const handleSearch = (e) => {
@@ -32,9 +32,12 @@ function Home() {
       </form>
 
       <div className="movies-grid">
-        {movies.map((movie) => (
-          <MovieCard movie={movie} key={movie.id} />
-        ))}
+        {movies.map(
+          (movie) =>
+            movie.title.toLowerCase().startsWith(searchQuery) && (
+              <MovieCard movie={movie} key={movie.id} />
+            )
+        )}
       </div>
     </div>
   );
