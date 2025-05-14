@@ -1,0 +1,77 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Production build output
+dist/
+build/
+dist-ssr/
+
+# Local environment settings
+*.local
+.env
+.env.*.local
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional: TypeScript cache
+*.tsbuildinfo
+
+# Optional: macOS and Linux file indexing
+.AppleDouble
+.LSOverride
+
+# Optional: coverage reports
+coverage/
+
+# Optional: next.js/other SSR frameworks (just in case)
+.next/
+out/
+
+# Optional: parcel cache
+.cache/
+
+# Optional: eslint cache
+.eslintcache
+
+# Optional: storybook
+.storybook-out/
+
+# Optional: testing
+jest-test-results.json
+test-output/
+
+# Optional: VSCode debug configs
+.vscode/launch.json
+.vscode/tasks.json
+
+# Optional: React Native artifacts
+*.xcworkspace
+*.xcodeproj
+*.pbxproj
+*.xcuserstate
+*.hmap
+*.ipa
+*.apk
+*.jks
+*.keystore
